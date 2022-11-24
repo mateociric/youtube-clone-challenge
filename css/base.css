@@ -1,0 +1,29 @@
+/*CSS reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* decalaring CSS variables */
+:root {
+    --white: #fff;
+    --header-border: #eae9ea;
+    --icon-hover: #e5e5e5;
+    --icon-hover-menu: #f2f2f2;
+    --search-bar-border: #cdcbcd;
+    --button-bg: #f2f0f2;
+    --button-bg-dark: #e6e6e6;
+    --title-box: #000000b7;
+    --notification-bg: #cd0000;
+    --font: 'Roboto', sans-serif;
+    --font-color: #939393;
+    --main-bg: #f9f7f9;
+    --time-duration: #020001;
+}
+
+html {
+    box-sizing: border-box;
+    /* reduce default font-size to 10px (1rem = 10px) */
+    font-size: 62.5%;
+}

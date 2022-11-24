@@ -1,0 +1,35 @@
+aside {
+    width: 5.4rem;
+    /* fill entire height of viewport */
+    height: 100vh;
+    
+    background-color: var(--white);
+
+    position: fixed;
+    top: 3.9rem;
+    z-index: 2;
+}
+
+.navigation div {
+    /* define width and height for :hover */
+    width: 5.4rem;
+    height: 6.4rem;
+    /* center img & p inside div */
+    justify-content: center;
+}
+
+.navigation div:hover {
+    border-radius: .5rem;
+    background-color: var(--icon-hover-menu);
+    cursor: pointer;
+}
+
+.navigation p {
+    font: var(--font);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.nav-icon {
+    width: 2.4rem;
+}

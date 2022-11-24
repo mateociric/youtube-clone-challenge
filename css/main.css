@@ -1,0 +1,77 @@
+main {
+    padding: 5.8rem 7.2rem 5.8rem 7.2rem;
+    background-color: var(--main-bg);
+    justify-items: center;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.video-file__image-container {
+    position: relative;
+}
+
+/* video image */
+.video-file__image-container img {
+    width: 100%;
+}
+
+/* video time duration */
+.video-file__image-container div {
+
+    /* maintain size relating to parent element */
+    padding: 1%;
+    border-radius: .25rem;
+
+    justify-content: center;
+
+    background-color: var(--time-duration);
+
+    position: absolute;
+    bottom: .75rem;
+    right: .5rem;
+
+    font-family: var(--font);
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    color: var(--white);
+
+}
+
+.video-file__info {
+    display: flex;
+    margin-top: .5rem;
+}
+
+/* author icon */
+.video-file__info img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.video-file__info__text {
+    width: 100%;
+    margin-left: 1rem;
+}
+
+/* video title */
+.video-file__info__text p:first-child {
+    margin-top: .5rem;
+    font: var(--font);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* author name & upload time */
+.video-file__info__text p:not(:first-child) {
+    font: var(--font);
+    font-size: 1.1rem;
+    color: var(--font-color);
+    line-height: 1.5rem;
+}
+
+/* move author name from video title */
+.video-file__info__text p:nth-child(2) {
+    margin-top: .5rem;
+}
