@@ -144,33 +144,14 @@ header img {
     position: relative;
 }
 
-/* notification number */
-.section-third__title__notification-num {
-    width: .75rem;
-    height: .75rem;
-    border-radius: 100%;
-    /* give it outline to expand size of circle */
-    outline: .5rem solid var(--notification-bg);
-
-    position: absolute;
-    right: 1.2rem;
-
-    background-color: var(--notification-bg);
-    
-    color: var(--white);
-    font-family: var(--font);
-    font-weight: 500;
-
-    justify-content: center;
-}
 
 /* insert title box */
-.section-third div:first-of-type:hover::after {
+.section-third__title:first-of-type:hover::after {
     content: 'Uploading';
-
+    
     padding: 1rem;
     border-radius: .5rem;
-
+    
     background-color: var(--title-box);
 
     font-family: var(--font);
@@ -183,7 +164,7 @@ header img {
 }
 
 /* insert title box */
-.section-third div:nth-of-type(2):hover::after {
+.section-third__title:nth-of-type(2):hover::after {
     content: 'Youtube apps';
 
     padding: 1rem;
@@ -203,12 +184,12 @@ header img {
 }
 
 /* insert title box */
-.section-third div:last-of-type:hover::after {
+.section-third__title:last-of-type:hover::after {
     content: 'Notification';
 
     padding: 1rem;
     border-radius: .5rem;
-
+    
     background-color: var(--title-box);
     font-family: var(--font);
     font-size: 1.2rem;
@@ -219,6 +200,26 @@ header img {
     left: -1.5rem;
     
     white-space: nowrap;
+}
+
+/* notification number */
+.section-third__title__notification-num {
+    width: .75rem;
+    height: .75rem;
+    border-radius: 100%;
+    /* give it outline to expand size of circle */
+    outline: .5rem solid var(--notification-bg);
+
+    position: absolute;
+    right: 1.2rem;
+
+    background-color: var(--notification-bg);
+    
+    color: var(--white);
+    font-family: var(--font);
+    font-weight: 500;
+    
+    justify-content: center;
 }
 
 .icon-person:hover {
