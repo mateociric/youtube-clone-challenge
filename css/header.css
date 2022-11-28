@@ -136,7 +136,7 @@ header img {
     justify-content: space-between;
 }
 
-.section-third__title {
+.section-third div {
     width: 4.6rem;
     display: flex;
     justify-content: center;
@@ -146,7 +146,7 @@ header img {
 
 
 /* insert title box */
-.section-third__title:first-of-type:hover::after {
+.section-third__upload:hover::after {
     content: 'Uploading';
     
     padding: 1rem;
@@ -164,7 +164,7 @@ header img {
 }
 
 /* insert title box */
-.section-third__title:nth-of-type(2):hover::after {
+.section-third__youtube-apps:hover::after {
     content: 'Youtube apps';
 
     padding: 1rem;
@@ -184,7 +184,7 @@ header img {
 }
 
 /* insert title box */
-.section-third__title:last-of-type:hover::after {
+.section-third__notification:hover::after {
     content: 'Notification';
 
     padding: 1rem;
@@ -200,18 +200,20 @@ header img {
     left: -1.5rem;
     
     white-space: nowrap;
+
 }
 
 /* notification number */
-.section-third__title__notification-num {
-    width: .75rem;
-    height: .75rem;
+.section-third__notification__num {
+    width: 40%;
+
+    /* height to be same as width */
+    aspect-ratio: 1;
     border-radius: 100%;
-    /* give it outline to expand size of circle */
-    outline: .5rem solid var(--notification-bg);
 
     position: absolute;
-    right: 1.2rem;
+    top: -.6rem;
+    right: .5rem;
 
     background-color: var(--notification-bg);
     
@@ -220,6 +222,8 @@ header img {
     font-weight: 500;
     
     justify-content: center;
+
+    cursor: pointer;
 }
 
 .icon-person:hover {
